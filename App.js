@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView,Platform, StyleSheet, Text, View} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -15,16 +15,11 @@ const instructions = Platform.select({
     'Kimochi Zamete\n' +
     'Shake the rythm',
 });
-
-type Props = {};
-export default class App extends Component<Props> {
+import Fblogin from './src/pages/Fblogin.js'
+export default class App extends Component{
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Hello World</Text>
-        <Text style={styles.instructions}>Thai + To + Hon + Vuong</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+        <Fblogin />
     );
   }
 }
