@@ -9,7 +9,6 @@ export default class Fblogin extends Component {
             password: ""
           };      
       }
-    
       _onPressButton() {
         Alert.alert('You tapped the button!')
       }

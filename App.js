@@ -16,10 +16,11 @@ const instructions = Platform.select({
     'Shake the rythm',
 });
 import Fblogin from './src/pages/Fblogin.js'
+import Calculator from './src/calculator/Calculator'
 export default class App extends Component{
   render() {
     return (
-        <Fblogin />
+        <Calculator />
     );
   }
 }
